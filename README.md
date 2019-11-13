@@ -1,8 +1,25 @@
 # Jekyll::Academicons::Svg
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jekyll/academicons/svg`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Gem Version](https://badge.fury.io/rb/jekyll-academicons-svg.svg)](https://badge.fury.io/rb/jekyll-academicons-svg)
+[![Depfu](https://badges.depfu.com/badges/2485678e93db5385c4b69cf7f7ca7499/overview.svg)](https://depfu.com/github/sylvainmetayer/jekyll-academicons-svg?project_id=10126)
+[![Build Status](https://travis-ci.org/sylvainmetayer/jekyll-academicons-svg.svg?branch=master)](https://travis-ci.org/sylvainmetayer/jekyll-academicons-svg)
 
-TODO: Delete this and the text above, and describe your gem
+
+Use all of [Academicons](https://jpswalsh.github.io/academicons/) without the need to import the full css / svg.
+
+This Jekyll plugin will look for the icons you include in your page and only include the icons you used.
+
+## Usage
+
+- When you want to include an icon, you can use the same name as you will do to with Academicons
+
+    `{% a_svg google-scholar %}`
+
+    Each icon get the `academic-icon` class, which you can use in your CSS to customize the appearance of your icon.
+
+- You will need to have in **one** part of your project (at the end of your layout for example) liquid tag to generate the SVG definition.
+
+    The syntax is this one `{% a_svg_generate %}` 
 
 ## Installation
 
@@ -20,10 +37,6 @@ Or install it yourself as:
 
     $ gem install jekyll-academicons-svg
 
-## Usage
-
-TODO: Write usage instructions here
-
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -32,7 +45,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/jekyll-academicons-svg. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/sylvainmetayer/jekyll-academicons-svg. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
