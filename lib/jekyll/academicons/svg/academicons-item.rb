@@ -4,12 +4,14 @@ module Jekyll
   module Academicons
     module Svg
       class AcademiconsItemGenerator < Liquid::Tag
-        def initialize(tag_name, faIcon, tokens)
+        def initialize(tag_name, markup, tokens)
           super
-          @icon = AcademiconsIcon.new(faIcon.strip)
+          @tmp_markup = markup
         end
 
         def render(context)
+          faIcon = context[@markup] ||= @tmp_markup
+          @icon = FontAwesomeIcon.new(faIcon.strip)
           unless context.environments.first['page']['academicons_svg'].is_a?([]::class)
             context.environments.first['page']['academicons_svg'] = []
           end
