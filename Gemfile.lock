@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-academicons-svg (0.1.1)
+    jekyll-academicons-svg (0.1.2)
 
 GEM
   remote: https://rubygems.org/
