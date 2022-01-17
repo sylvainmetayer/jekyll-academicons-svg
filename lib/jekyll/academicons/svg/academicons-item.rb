@@ -11,7 +11,7 @@ module Jekyll
 
         def render(context)
           faIcon = context[@markup] ||= @tmp_markup
-          @icon = FontAwesomeIcon.new(faIcon.strip)
+          @icon = AcademiconsIcon.new(faIcon.strip)
           unless context.environments.first['page']['academicons_svg'].is_a?([]::class)
             context.environments.first['page']['academicons_svg'] = []
           end

@@ -13,17 +13,17 @@ This Jekyll plugin will look for the icons you include in your page and only inc
 
 - When you want to include an icon, you can use the same name as you will do to with Academicons
 
-    `{% fa_svg google-scholar %}`
+    `{% a_svg google-scholar %}`
 
     or
 
-    `{% fa_svg 'google-scholar' %}`
+    `{% a_svg 'google-scholar' %}`
 
     Each icon get the `academic-icon` class, which you can use in your CSS to customize the appearance of your icon.
 
 - You will need to have in **one** part of your project (at the end of your layout for example) liquid tag to generate the SVG definition.
 
-    The syntax is this one `{% fa_svg_generate %}`
+    The syntax is this one `{% a_svg_generate %}`
 
 ## Installation
 
